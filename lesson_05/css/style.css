@@ -1,0 +1,187 @@
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #231F8B;
+    color: #fff;
+}
+p {
+    line-height: 1.3;
+}
+[class*="__container"] {
+    max-width: 1100px;
+    padding: 0 25px ;
+    margin: 0 auto;
+}
+#header {
+    padding: 20px 0 70px 0;
+}
+.homework span {
+    color: #37ff00;
+}
+/*            Advantages             */
+
+.advantages {
+    padding-bottom: 70px;
+}
+.advantages__title {
+    text-align: center;  
+    margin-bottom: 50px;
+    
+}
+.advantages__title h1 {
+    font-size: 60px;
+    font-weight: 500;
+    max-width: 800px;
+ 
+    margin-left: 120px;  
+    /* Прошу не сваритися, так як намагався відцентрувати за допомогою margin-left. Попередньо перевірив через flex і зрозумів, що оптимальне значення +- 120px  =) */
+}
+.advantages__content-title {
+    max-width: 780px;
+}
+.advantages__content-title {
+    margin-bottom: 70px;
+}
+.subtitle {
+    font-size: 14px;
+    color: #5A54F2;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.advantages__content-title h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.advantages__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 35px;
+    width: 230px;
+    min-height: 300px;
+    padding: 35px 40px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+}
+.advantages__item-img{
+    width: 72px;
+    height: 72px;
+    margin-bottom: 20px;
+}
+.advantages__item-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.advantages__item-content span {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+    margin-bottom: 20px;
+}
+.third-item {
+    background-color: #5A54F2;
+    color: #fff;
+}
+.item--zero-margin {
+    margin-right: 0px;
+}
+.second-item,
+.item--zero-margin {
+    margin-top: 50px;
+}
+
+/*              Expample                */
+
+.expample {
+    padding-bottom: 70px;
+}
+.expample__title {
+    margin-bottom: 40px;
+}
+.expample__title h2 {
+    color: #ff0000;
+    font-size: 36px;
+    font-weight: 500;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+.expample__title span {
+    text-decoration: underline;
+    text-decoration-color: #37ff00;
+}
+.expample__items {
+    margin-bottom: 70px;
+}
+.expample__item {
+    background-color: #5A54F2;
+    padding: 20px;
+    width: 450px;
+}
+.item-auto {
+    overflow: auto;
+    max-height: 100px;
+
+    margin-bottom: 50px;
+}
+.expample__item-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.expample__item-text p {
+    font-size: 14px;
+}
+.item-hidden {
+    overflow: hidden;
+    max-height: 115px;
+    margin-left: -50px;
+}
+
+.square__block {
+    background-color: #fff;
+    padding: 15px;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 25px;
+    background-color: #000;
+}
+.square-2 {
+    width: 80px;
+    height: 80px;
+}
+.square-3 {
+    width: 60px;
+    height: 60px;
+}
+.square-4 {
+    width: 40px;
+    height: 40px;
+}
+.vertical__block img {
+    vertical-align: bottom;
+}
+.vertical__block span {
+    margin-left: 30px;
+    font-style: italic;
+}
+/*              Footer                */
+#footer {
+    padding-bottom: 10px;
+}
+.up {
+    padding: 5px 20px ;
+    background-color: #fff;
+    color: #000;
+}
