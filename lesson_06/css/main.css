@@ -1,0 +1,196 @@
+@import url("reset.css");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+p {
+    line-height: 1.5;
+}
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+[class*="__container"] {
+    max-width: 1290px;
+    padding: 0 10px ;
+    margin: 0 auto;
+}
+
+/*        Header      */
+
+#header {
+    padding: 15px 0 50px 0;
+}
+.header__title {
+    text-align: center;
+}
+.header__title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right,
+        #6a4f29,#d7982a);
+}
+
+/*        Ecobazar      */
+
+.ecobazar {
+    margin-bottom: 50px;
+    color: #808080;
+}
+.ecobazar__title {
+    margin-bottom: 20px;
+}
+.ecobazar__title h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #00b307;
+}
+.ecobazar__content {
+    max-width: 648px;
+    margin: 0 auto;
+}
+.ecobazar__text p {
+    margin-bottom: 20px;
+}
+.ecobazar__text p + p ~ p {
+    margin-bottom: 0px;
+    /* міг би використати :last-child */
+}
+.ecobazar__list {
+    margin-bottom: 20px;
+}
+.ecobazar__list li {
+    margin-bottom: 14px;
+    padding-left: 28px;
+    min-height: 20px;
+    background: url(../img/check.svg) 0 0 / 20px no-repeat;
+}
+
+/*        Hydra      */
+.hydra {
+    background-color: #302c42;
+    padding: 30px 0 50px 0;
+}
+
+.hydra__top {
+    margin-bottom: 50px;
+}
+.hydra__content ul {
+    background: radial-gradient(circle, rgba(58, 52, 86, 1) 0%, rgba(33, 30, 46, 1) 95%);
+    color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(5, 5, 6, 0.01);
+    padding: 26px 40px;
+    border-radius: 90px;
+}
+.hydra__content p {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.hydra__content ul li {
+    display: inline-block;
+}
+.location {
+    background: url(../img/location.svg) 0 50% no-repeat;
+    background-size: 40px 60px;
+    border-right: 1px solid rgb(192, 183, 232, 0.3);
+    margin-right: 40px;
+
+    padding: 20px 60px;
+}
+.tel {
+    background: url(../img/phone.svg) 0 50% no-repeat;
+    background-size: 51px 51px;
+    border-right: 1px solid rgb(192, 183, 232, 0.3);
+    margin-right: 40px;
+
+    padding: 20px 60px 20px 80px;
+}
+.mail {
+    background: url(../img/mail.svg) 0 50% no-repeat;
+    background-size: 55px 45px;
+
+    padding: 20px 60px 20px 80px;
+}
+/* =============== */
+
+.hydra__bottom {
+    background: url(../img/line-1.svg) 43% 0% no-repeat, 
+    url(../img/line-2.svg) 27% 70% no-repeat;
+    
+}
+.hydra__bottom-img {    
+    display: inline-block;
+    margin-right: 100px;
+}
+.hydra__bottom-img img {
+    border-radius: 45.8% 19.1% 45.8% 19.1% / 43.1% 17.9% 43.1% 17.9%;
+    overflow: clip;
+}
+.hydra__bottom-content{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 630px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+.hydra__title {
+    margin-bottom: 42px;
+}
+.hydra__title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.hydra__title span {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.hydra__text {
+    margin-bottom: 28px;
+}
+.hydra__text p {
+    font-size: 16px;
+}
+.hydra__btn {
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(129, 118, 175, 1) 0%, rgba(192, 183, 232, 1) 100%);
+    padding: 17px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+/*          Footer       */
+#footer {
+    padding: 10px 0;
+}
+.footer__text {
+    margin-bottom: 20px;
+}
+.footer__text p {
+    font-size: 12px;
+}
+.footer__text span {
+    color: #b00707;
+    font-weight: 700;
+}
+.up {
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0, .2);
+    border: 2px solid #000;
+    border-radius: 5px;
+
+    font-weight: 700;
+}
