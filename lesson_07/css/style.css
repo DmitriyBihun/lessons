@@ -1,0 +1,382 @@
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+[class*="__container"] {
+    max-width: 1220px;
+    padding: 0 10px ;
+    margin: 0 auto;
+}
+/*        Header         */
+#header {
+    padding: 10px 0 20px 0;
+}
+.header__title h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #6a4f29, #d7982a);
+} 
+      
+/*          Faculty           */
+.faculty {
+    padding: 60px 0 100px 0;
+    background-color: #412672;
+}
+.faculty__title {
+    max-width: 505px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.faculty__title h2 {
+    font-size: 38px;
+}
+.faculty__title span {
+    font-weight: 700;
+}
+.faculty__items {
+    font-size: 0px;
+}
+.faculty__item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 387px;
+    width: 100%;
+    min-height: 467px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0, .8);
+
+    margin-right: 19px;
+    /* transition: background-color .3s ease; */
+}
+/* Так як 387+387+387+20+20 = 1201рх я вирішив зробити margin-right: 19px; а не як по макету margin-right: 20px;*/
+.faculty__item:last-child {
+    margin-right: 0;
+}
+.faculty__item:hover {
+    background-color: #FFBE48;
+}
+.faculty__item > *:not(:last-child) {
+    margin-bottom: 16px;
+}
+.faculty__item img {
+    border-radius: 5px;
+}
+.faculty__item h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+.faculty__text p {
+    font-size: 15px;
+    line-height: 1.26;
+    color: #4f4f4f;
+}
+.faculty__link {
+    color: #FE3F3F;
+    font-size: 15px;
+}
+.faculty__link:hover {
+    color: #b22e2e;
+    text-decoration: underline;
+}
+
+/*          Best         */
+.best {
+    padding: 55px 0 42px 0; 
+    color: #412672;
+}
+.best__big-container {
+    max-width: 1382px;
+    padding: 0 5px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+.best__content {
+    display: inline-block;
+    max-width: 518px;
+    margin-top: 100px;
+    margin-right: 90px;
+    vertical-align: top;
+}
+/* Зробив через vertical-align: top; і margin так як при додаванні "навігації" контент сповзає вниз.*/
+.best__content > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+.best__title h2 {
+    font-size: 34px;
+}
+.best__title span {
+    font-weight: 700;
+}
+.best__text p {
+    font-size: 22px;
+    line-height: 1.22;
+}
+.best__list > *:not(:last-child) {
+    margin-bottom: 21px;
+}
+.best__list li:before {
+    content: '';
+    background-image: url(../img/check.svg);
+    vertical-align: middle;
+    width: 29px;
+    height: 29px;
+    margin-right: 15px;
+}
+.best__list li {
+    font-size: 20px;
+}
+.best__img {
+    display: inline-block;
+}
+.best__img img {
+    margin-bottom: 15px;
+}
+.circles {
+    text-align: center;
+}
+.circles li {
+    background-color: #EAEAEA;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.circles li:first-child {
+    background-color: #412672;
+}
+
+/*          Curse           */
+.curse {
+    padding: 40px 0 50px 0;
+}
+.curse__title {
+    margin-bottom: 30px;
+    color: #412672;
+}
+.curse__title h2 {
+    font-size: 38px;
+}
+.curse__title span {
+    font-weight: 700;
+}
+.curse__items {
+    font-size: 0px;
+}
+.curse__item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 387px;
+    width: 100%;
+    min-height: 605px;
+    /* Додав висоту для візуального сприйняття. Без флексів тяжко притиснути кнопку( */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0, .3);
+    
+    text-align: center;
+    margin-right: 19px;
+}
+.curse__item:last-child {
+    margin-right: 0;
+}
+.curse__item > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+.curse__item-title p {
+    display: inline-block;
+    font-size: 15px;
+    background-color: #FFC107;
+    padding: 4px 10px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+.curse__item-title h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.curse__text p {
+    font-size: 15px;
+    line-height: 1.22;
+    color: #4f4f4f;
+}
+.curse__btn {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #FE3F3F;
+    color: #fff;
+    padding: 17px 94px;
+    border-radius: 10px;
+}
+.curse__btn:hover {
+    background-color: #b22e2e;
+}
+
+/*          Game             */
+.game {
+    padding-bottom: 50px;
+}
+.game__title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.game__title h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.game__place {
+    width: 1000px;
+    height: 600px;
+    background: linear-gradient(38deg, rgba(255,255,255,1) 0%, rgba(246,255,139,1) 16%, rgba(255,205,84,1) 36%, rgba(246,255,139,1) 45%, rgba(255,205,84,1) 57%, rgba(246,255,139,1) 74%, rgba(255,205,84,1) 87%, rgba(255,255,255,1) 100%);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.block {
+    background: #fff;
+    box-shadow: 0px 0px 10px #000 inset;
+}
+.block-one {
+    width: 70px;
+    height: 100px;
+}
+.block-one p {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.arrow-bottom {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #000;
+    margin-left: 25px;
+
+}
+.block-two {
+    width: 250px;
+    height: 45px;
+    margin-top: -45px;
+    margin-left: 70px;
+}
+.block-three {
+    width: 40px;
+    height: 150px;
+    margin-top: -45px;
+    margin-left: 320px;
+}
+.block-four {
+    width: 150px;
+    height: 35px;
+    margin-top: -35px;
+    margin-left: 210px;
+}
+.block-five {
+    width: 25px;
+    height: 150px;
+    margin-top: 0px;
+    margin-left: 210px;
+}
+.block-six {
+    width: 500px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: 235px;
+}
+.block-six p {
+    text-align: center;
+}
+.block-seven {
+    width: 15px;
+    height: 250px;
+    margin-top: -250px;
+    margin-left: 735px;
+}
+.block-eight {
+    width: 100px;
+    height: 50px;
+    margin-top: -300px;
+    margin-left: 735px;
+}
+.block-eight p {
+    text-align: center;
+    padding-top: 8px;
+}
+.block-nine {
+    width: 20px;
+    height: 500px;
+    margin-top: -50px;
+    margin-left: 835px;
+}
+.block-ten {
+    width: 700px;
+    height: 30px;
+    margin-top: -30px;
+    margin-left: 135px;
+}
+.block-ten p {
+    padding-top: 5px;
+}
+.block-eleven {
+    width: 75px;
+    height: 80px;
+    margin-top: -80px;
+    margin-left: 60px; 
+}
+.block-eleven p {
+    text-align: center;
+    padding-top: 15px;
+}
+.block-twelve {
+    width: 13px;
+    height: 200px;
+    margin-top: -280px;
+    margin-left: 122px;
+}
+.block-thirteen {
+    width: 100px;
+    height: 70px;
+    margin-top: -270px;
+    margin-left: 35px;
+}
+.block-thirteen p {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.block-thirteen a {
+    text-decoration: underline;
+    margin-left: 15px;
+}
+.block:not(:first-child){
+    visibility: hidden;
+}
+
+.block:hover + .block, .block:hover {
+    visibility: visible;
+}
+
+/*          Footer           */
+#footer {
+    padding-bottom: 10px;
+}
+.footer__text span {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #b22e2e;
+}
