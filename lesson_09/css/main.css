@@ -1,0 +1,16 @@
+@import url("reset.css");
+
+body {
+    font-family: "Inria Serif", serif;
+    background-color: #fafafa;
+}
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1350px;
+    padding: 0 15px ;
+    margin: 0 auto;
+}
