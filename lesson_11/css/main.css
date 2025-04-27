@@ -1,0 +1,467 @@
+
+@import url("reset.css");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*          Header          */
+.header {
+    padding: 10px 0 50px 0;
+}
+.header__title {
+    text-align: center;
+}
+.header__title h1 {
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+.header__title h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ed3f41;
+    bottom: -3px;
+    left: 0;
+}
+/* ====================== */
+/*          Car           */
+.car {
+    padding: 50px 0 50px 0;
+}
+
+.car__wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 100px;
+}
+
+.car__windshield {
+    width: 280px;
+    height: 90px;
+    border: 5px solid #262223;
+    border-radius: 50px 50px 0px 0px / 80px 80px 0px 0px;
+    background-color: #c9c9c9;
+    position: relative;
+    transform: translateX(32%);
+}
+
+.mirror {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mirror__vertical {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 10px;
+    background-color: #262223;
+}
+
+.mirror__horizontal {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #262223;
+}
+
+.car__windshield-bot {
+    font-size: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+}
+
+.seat {
+    background-color: #262223;
+    width: 100px;
+    height: 20px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    display: inline-block;
+}
+
+.seat:first-child {
+    margin-right: 30px;
+}
+
+.seat:last-child::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #262223;
+    right: 10px;
+    border-radius: 50%;
+    background: transparent;
+    z-index: 2;
+    bottom: -35px;
+}
+
+.car__body-container {
+    box-shadow: 0px 3px 5px 0px #292929;
+    border: 6px solid #262223;
+    width: 460px;
+    height: 173px;
+    background: #ED3F41;
+    border-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 85px;
+    border-top-left-radius: 85px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.car__hood {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #EE5557;
+    height: 60px;
+    width: 300px;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    box-shadow: inset 0px 8px 20px 2px #DA3839;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.car__hood-part {
+    width: 25px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.car__light:nth-child(1) {
+    position: absolute;
+    top: 16%;
+    left: 2%;
+    width: 60px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid #262223;
+}
+
+.car__light:nth-child(2) {
+    position: absolute;
+    top: 16%;
+    right: 2%;
+    width: 60px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid #262223;
+}
+
+.light {
+    width: 45px;
+    height: 45px;
+    border: 6px solid #262223;
+    border-radius: 50%;
+    background: white;
+    box-shadow: inset 0px 6px 0px 0px #BABABA;
+    margin-left: 3px;
+}
+
+.car__foglights {
+    position: absolute;
+    top: 63%;
+    width: 100%;
+    height: 60px;
+    border-left: 5px solid white;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 100px;
+    margin-bottom: -20px;
+    box-shadow: inset -20px 20px 0px 0px #C12D2F;
+    border-bottom: 20px solid #7F211D;
+}
+
+.foglight-left {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 170px;
+    height: 50px;
+    border: 4px solid #363231;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 70px;
+    box-shadow: inset 0px -6px 4px 0px #B7B7B8;
+    background: #fff;
+    margin-top: -5px;
+}
+
+.foglight-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: inset 0px -6px 4px 0px #B7B7B8;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 70px;
+    border: 4px solid #363231;
+    height: 50px;
+    width: 170px;
+    background: #fff;
+    margin-top: -5px;
+}
+
+.foglight-left__light {
+    margin-top: 10px;
+    box-shadow: inset -1px 9px 5px 0px #262223;
+    border-top-right-radius: 70px;
+    border: 4px solid #262223;
+    width: 150px;
+    height: 20px;
+    background: #363231;
+    overflow: hidden;
+}
+
+.foglight-right__light {
+    margin-top: 10px;
+    box-shadow: inset -1px 9px 5px 0px #262223;
+    border-top-left-radius: 70px;
+    border: 4px solid #262223;
+    width: 150px;
+    height: 20px;
+    background: #363231;
+    overflow: hidden;
+    margin-left: 12px;
+}
+
+.foglight-left__light::after {
+    content: '';
+    background-color: #EB8D43;
+    width: 65px;
+    height: 16px;
+    box-shadow: inset -2px 5px 2px 0px #B76C2E;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 15px;
+    border: 2px solid #262223;
+}
+
+.foglight-right__light::after {
+    content: '';
+    background-color: #EB8D43;
+    width: 65px;
+    height: 16px;
+    box-shadow: inset -2px 5px 2px 0px #B76C2E;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border: 2px solid #262223;
+    margin-left: 50%;
+}
+
+.car__grille {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -13px;
+    box-shadow: 0px 0px 8px 3px #7F211D;
+    background: white;
+    border: 4px solid white;
+    width: 13%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.car__grille-line {
+    background: #363231;
+    height: 8px;
+    width: 100%;
+}
+
+.car__grille-line:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.car__bottom {
+    max-width: 415px;
+    width: 100%;
+    position: relative;
+    margin-top: -20px;
+    margin-left: 25px;
+    font-size: 0;
+}
+
+.car__bottom>*:not(:last-child) {
+    margin-right: 8px;
+}
+
+.car__pallet {
+    border-radius: 20px;
+    width: 52%;
+    background: #262223;
+    height: 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.car__wheel {
+    display: inline-block;
+    margin-top: -30px;
+    border: 6px solid;
+    border-radius: 25px;
+    width: 90px;
+    background: #363231;
+    height: 120px;
+    box-shadow: inset 0px -15px 1px 0px #524d4d;
+}
+
+.car__shadow {
+    margin-left: 6px;
+    width: 450px;
+    height: 20px;
+    margin-top: -5px;
+    border-radius: 50%;
+    background: #262223;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.car__content {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.car__title {
+    margin-bottom: 20px;
+}
+
+.car__title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Inria Serif", serif;
+}
+
+.car__text p:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.car__text p {
+    font-size: 14px;
+    font-style: italic;
+}
+/*              Example          */
+.example {
+    padding: 50px 0 50px 0;
+}
+.example__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.example__title h2 {
+    font-size: 40px;
+}
+.example__cards {
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px dashed #000;
+    display: inline-block;
+    margin: 10px;
+}
+.card__block {
+    width: 100px;
+    height: 100px;
+    background-color: #ED3F41;
+    transition: all .5s ease;
+}
+.card__text {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.example__card-translate .card__block:hover {
+    transform: translateX(40px);
+}
+.example__card-scale .card__block:hover {
+    transform: scale(.5);
+}
+.example__card-rotate .card__block:hover {
+    transform: rotate(-25deg);
+}
+.example__card-skew .card__block:hover {
+    transform: skew(-30deg, 30deg);
+}
+.example__card-origin .card__block:hover {
+    transform: scale(-1, 1);
+}
+.coin {
+    display: inline-block;
+}
+.coin__body {
+    position: relative;
+    perspective: 300px;
+}
+.coin__front, .coin__back {
+    transition: all .3s;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.coin__back {
+    transform: rotateX(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.coin__front {
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+.coin__body:hover .coin__back {
+    transform: rotateX(0deg);
+}
+.coin__body:hover .coin__front {
+    transform: rotateX(-180deg);
+}
+.coin__text {
+    margin-top: 20px;
+}
+/*          Footer           */
+.footer {
+    padding-bottom: 10px;
+    text-align: center;
+}
+.footer__text p {
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+}
